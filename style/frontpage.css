@@ -1,0 +1,843 @@
+
+#dynamic_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* .footer img {
+    max-width: 1200px;
+    width: 100%;
+}
+.footer, .header {
+    text-align: center;
+} */
+
+/* .header nav ul{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+nav {
+    width: 100%;
+    height: 45px;
+    background-color: #BA2027;
+} */
+#dynamic_container img {
+    max-width: 100%;
+}
+#dynamic_container .area_section {
+    display: none;
+}
+.section_content {
+    padding-bottom: 10%;
+}
+#page-site-index #page-footer{
+    display: none;
+}
+/****************************************************/
+/****************************************************/
+/****************************************************/
+#initial_div {
+    display: none;
+}
+#initial_div .section_content {
+    background: url([[pix:theme|frontpage_img/fondo_home_con_avata_cuted]]) top center no-repeat transparent;
+    background-size: contain;
+    position: relative;
+    width: 100%;
+    padding-top: 82.65%;
+    padding-bottom: 0%;
+}
+#dynamic_container #initial_div .section_content div#main_diagram {
+    position: absolute;
+    width: 66%;
+    height: 80.36%;
+    top: 10%;
+    left: 24%;
+    background: url([[pix:theme|frontpage_img/home]]) no-repeat transparent;
+    background-position: 0 0;
+    background-size: 145% 100%; /**********/
+}
+#dynamic_container #initial_div .section_content div#main_diagram .nodebtn {
+    width: 15.15%;
+    height: 15.06%;
+    background: url([[pix:theme|frontpage_img/home]]) no-repeat transparent;
+    background-size: 940% 651%;
+    position: absolute;
+}
+#dynamic_container #initial_div .section_content div#main_diagram .nodebtn:hover {
+    cursor: pointer;
+}
+#dynamic_container #initial_div .section_content div#main_diagram .nodebtn.inv_cientifica {
+    /*background-position: -850px -600px;*/
+    background-position: 73.9% 75%;
+    background-position: 82.6% 88.5%;
+    left: -0.1%;
+    top: 41.7%;
+}
+#dynamic_container #initial_div .section_content div#main_diagram .nodebtn.formacion_para_inv {
+    background-position: -850px 0;
+    background-position: 82.6% 0;
+    top: -0.4%;
+    left: 42.05%;
+}
+#dynamic_container #initial_div .section_content div#main_diagram .nodebtn.innovacion_y_trans {
+    background-position: -850px -400px;
+    background-position: 82.6% 59%;
+    top: 41.7%;
+    left: 85.1%;
+}
+#dynamic_container #initial_div .section_content div#main_diagram .nodebtn.gestion_de_inv {
+    background-position: -850px -200px;
+    background-position: 82.6% 29%;
+    left: 41.8%;
+    top: 82.7%;
+}
+#dynamic_container #initial_div .section_content div#main_diagram .nodebtn.inv_cientifica:hover, #dynamic_container #initial_div .section_content div#main_diagram .nodebtn.inv_cientifica.focused {
+    background-position: -1000px -600px;
+    background-position: 97.1% 88.5%;
+}
+#dynamic_container #initial_div .section_content div#main_diagram .nodebtn.formacion_para_inv:hover, #dynamic_container #initial_div .section_content div#main_diagram .nodebtn.formacion_para_inv.focused {
+    background-position: -1000px 0;
+    background-position: 97.1% 0;
+}
+#dynamic_container #initial_div .section_content div#main_diagram .nodebtn.innovacion_y_trans:hover, #dynamic_container #initial_div .section_content div#main_diagram .nodebtn.innovacion_y_trans.focused {
+    background-position: -1000px -400px;
+    background-position: 97.1% 59%;
+}
+#dynamic_container #initial_div .section_content div#main_diagram .nodebtn.gestion_de_inv:hover, #dynamic_container #initial_div .section_content div#main_diagram .nodebtn.gestion_de_inv.focused {
+    background-position: -1000px -200px;
+    background-position: 97.1% 29%;
+}
+
+#initial_div .section_content #main_diagram > img {
+    width: 100%;
+    display: none;  /**************************************************************************************************************/
+}
+#initial_div .section_content .node {
+    position: absolute;
+    font-size: 2.0em;
+    font-weight: bold;
+    text-align: center;
+    max-width: 21%;
+    border-bottom: 2px solid;
+    line-height: 0.9em;
+    letter-spacing: -0.04em;
+    transition: all 0.2s;
+}
+#initial_div .section_content .node:hover, #initial_div .section_content .node.focused {
+    cursor: pointer;
+    transform: scale(1.04, 1.04);
+    transition: all 0.2s;
+}
+#initial_div .section_content .node .text_link {
+    font-size: 0.6em;
+    display: block;
+    margin: -5px auto;
+}
+#initial_div .section_content .node.inv_cientifica {
+    color: #ED5C24;
+    top: 45.7%;
+    left: 15.2%;
+    border-bottom-color: #ED5C24;
+}
+#initial_div .section_content .node.formacion_para_inv {
+    color: #3C9285;
+    top: 18.8%;
+    left: 38.9%;
+    border-bottom-color: #3C9285;
+}
+#initial_div .section_content .node.innovacion_y_trans {
+    color: #D3AE4A;
+    top: 43.8%;
+    left: 62.7%;
+    border-bottom-color: #D3AE4A;
+}
+#initial_div .section_content .node.gestion_de_inv {
+    color: #F9994C;
+    left: 38.5%;
+    top: 70.6%;
+    border-bottom-color: #F9994C;
+}
+#dynamic_container #initial_div .section_content img#news_forum {
+    max-width: 354px;
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    top: inherit;
+    left: inherit;
+    width: 23%;
+}
+#dynamic_container #initial_div .section_content img#news_forum:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+/************************************************************************************/
+/******************* Formación para la investigación ********************************/
+/************************************************************************************/
+#dynamic_container .action_button_face > img {
+    width: 312px;
+    max-width: 312px;
+}
+/*#formacion_para_inv .section_content {*/
+.section_content {
+    background: url([[pix:theme|frontpage_img/fondo_formacion_para_la_informacion]]) top center no-repeat transparent;
+    width: 100%;
+    padding-top: 30px;
+}
+/*#formacion_para_inv .section_content {*/
+.section_content {
+    text-align: center;
+}
+/*#formacion_para_inv .section_content .action_button{*/
+    .section_content .action_button{
+    position: relative;
+    min-width: 312px;
+}
+/*#formacion_para_inv .section_content .action_button_face{*/
+    .section_content .action_button_face{
+    position: relative;
+}
+/*#formacion_para_inv .section_content .action_button_face:hover{*/
+    .section_content .action_button_face:hover{
+    cursor: pointer;
+}
+/*#formacion_para_inv .section_content .action_button_face > div{*/
+    .section_content .action_button_face > div{
+    position: absolute;
+}
+/*#formacion_para_inv .section_content .action_button_face div.title {*/
+    .section_content .action_button_face div.title {
+    font-size: 52px;
+    font-weight: bold;
+    color: #547EC0;
+    top: 58.5%;
+    left: 11.1%;
+    letter-spacing: -0.07em;
+    width: 76.6%;
+}
+/*#formacion_para_inv .section_content .action_button_face div.more {*/
+    .section_content .action_button_face div.more {
+    font-size: 24px;
+    font-weight: normal;
+    color: #808285;
+    top: 78.5%;
+    left: 11.1%;
+    width: 76.6%;
+}
+#formacion_para_inv{
+    display: none;
+}
+#formacion_para_inv .section_content .action_button .action_button_child {
+    width: 650px;
+    padding: 37px 0;
+    margin-left: 40px;
+    margin-top: 33px;
+    border: 2px solid rgba(84, 126, 192, 0.45);
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+    position: relative;
+    background-color: rgba(255,255,255,0.6);
+    display: none;
+}
+#formacion_para_inv .section_content .teachers.action_button .action_button_child {
+     margin-left: -335px;
+}
+#formacion_para_inv .section_content .action_button .action_button_child > div {
+    display: inline-block;
+    vertical-align: text-top;
+}
+#formacion_para_inv .section_content .action_button_child div.title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #547EC0;
+    letter-spacing: -0.08em;
+}
+#formacion_para_inv .action_button_child .text_link {
+    display: block;
+    margin: 0.5em auto;
+    font-weight: normal;
+    font-size: 0.75em;
+}
+.action_button_child:before {
+    content: " ";
+    position: absolute;
+    top: -24px;
+    left: 115px;
+    height: 43px;
+    width: 44px;
+    border-radius: 15px 0 0 0;
+    transform: rotate(45deg);
+    background: linear-gradient(135deg, rgba(255,255,255,0.91) 51.5%, rgba(255,255,255,0) 50%);
+    border: 2px solid rgba(84, 126, 192, 0.45);
+    border-bottom-width: 0;
+    border-right-width: 0;
+    box-shadow: -2px -2px 3px 0px rgba(0,0,0,0.1);
+}
+.teachers .action_button_child:before {
+    right: 90px;
+    left: inherit;
+}
+#formacion_para_inv .section_content .action_button .action_button_child div.seedbed .action_button_child_face p {
+    line-height: 80%;
+}
+#formacion_para_inv .section_content .action_button .action_button_child .action_button_child_face:hover {
+    cursor: pointer;
+}
+#dynamic_container .action_button_face > img {
+    width: 312px;
+    max-width: 312px;
+}
+.students .action_button_child_face {
+    width: 330px;
+    max-width: 330px;
+    height: 218px;
+}
+.students .seedbed .action_button_child_face {
+    width: 280px;
+    margin-right: 20px;
+}
+#formacion_para_inv .section_content .action_button .action_button_child div.external_nodes {
+    position: relative;
+}
+#formacion_para_inv .section_content .action_button .action_button_child div.external_nodes:before {
+    content: " ";
+    position: absolute;
+background: url([[pix:theme|frontpage_img/sombra_divisoria]]) top left no-repeat transparent;
+    width: 20px;
+    left: -54px;
+    top: 0;
+    height: 100%;
+    max-height: 218px;
+    background-size: 100% 100%;
+    margin-left: 10%;
+}
+#formacion_para_inv .section_content .action_button .action_button_child .action_button_child_content {
+    /*display: none;*/
+    position: absolute;
+    width: 100%;
+}
+#formacion_para_inv .section_content .action_button .action_button_child div.seedbed .action_button_child_content ul {
+    list-style-type: none;
+    text-align: left;
+    position: relative;
+    margin-top: 50px;
+}
+#formacion_para_inv .section_content .action_button .action_button_child div.seedbed .action_button_child_content ul:before {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 16px solid #547EC0;
+    top: -45px;
+    left: 115px;
+}
+#formacion_para_inv .section_content .action_button .action_button_child div.seedbed .action_button_child_content ul li{
+    background-color: #547EC0;
+    border: 2px solid #FFF;
+    border-radius: 20px;
+    margin-top: 23px;
+    padding: 0px 14px 0px 55px;
+    font-size: 1.2em;
+    color: #FFF;
+    width: auto;
+    position: relative;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.5);
+    transform: translateX(0);
+    transition: all 0.2s;
+    display: table;
+}
+#formacion_para_inv .section_content .action_button .action_button_child div.seedbed .action_button_child_content ul li a {
+    display: block;
+    width: 100%;
+    padding: 4px 14px 3px 55px;
+    margin-left: -55px;
+    text-decoration: none;
+    color: #fff;
+}
+#formacion_para_inv .section_content .action_button .action_button_child div.seedbed .action_button_child_content ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+#formacion_para_inv .section_content .action_button .action_button_child div.seedbed .action_button_child_content ul li:hover {
+    transform: translateX(6px);
+    transition: all 0.30s;
+    cursor: pointer;
+    background-color: #6b97d3;
+}
+#formacion_para_inv .section_content .action_button .action_button_child div.seedbed .action_button_child_content ul li:before {
+    content: " ";
+    height: 50px;
+    width: 50px;
+background: url([[pix:theme|frontpage_img/etiqueta_ciclo_formacion_basica]]) 3px 3px no-repeat transparent;
+    background-size: 90%;
+    position: absolute;
+    left: -9px;
+    top: -13px;
+}
+#formacion_para_inv .section_content .action_button .action_button_child div.seedbed .action_button_child_content ul li:nth-child(2):before {
+    background-image: url([[pix:theme|frontpage_img/etiqueta_ciclo_formacion_especifica]]);
+}
+#formacion_para_inv .section_content .action_button .action_button_child div.seedbed .action_button_child_content ul li:nth-child(3):before {
+    background-image: url([[pix:theme|frontpage_img/etiqueta_ciclo_aplicacion_investigativa]]);
+}
+#formacion_para_inv .section_content .action_button .action_button_child div.seedbed .action_button_child_content ul li:nth-child(4):before {
+    background-image: url([[pix:theme|frontpage_img/etiqueta_ciclo_emprendimiento_innovacion]]);
+}
+
+@media (min-width: 960px) and (max-width: 1199px){
+    #formacion_para_inv .section_content .action_button .action_button_child{
+        margin-left: 0;
+    }
+    #initial_div .section_content .node {
+        font-size: 2.5vw;
+        max-width: 23%;
+        margin-left: -0.9%;
+        margin-top: -1.5%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 959px){
+    #formacion_para_inv .row-fluid .offset2:first-child {
+        margin-left: 7%;
+    }
+    #formacion_para_inv .section_content .action_button .action_button_child{
+        margin-left: 0;
+    }
+    #initial_div .section_content .node {
+        font-size: 2.56vw;
+        max-width: 24%;
+        margin-left: -1.3%;
+        margin-top: -1.6%;
+    }
+}
+
+@media (max-width: 767px) {
+    #initial_div .section_content {
+        background: url([[pix:theme|frontpage_img/fondo_home_sin_avata]]) center center no-repeat;
+        padding-top: 117.65%;
+        background-size: contain;
+    }
+    #dynamic_container #initial_div .section_content div#main_diagram {
+        position: absolute;
+        width: 100%;
+        top: 6%;
+        left: 0;
+    }
+    #initial_div .section_content .node {
+        font-size: 3.5vw;
+        max-width: 23%;
+        line-height: 1.2em;
+        margin-left: -0.8%;
+        margin-top: -3.5%;
+    }
+    .action_button_child:before {
+        left: calc(50% - 21px);
+    }
+    #formacion_para_inv .section_content .action_button .action_button_child > div {
+        display: block;
+    }
+    #formacion_para_inv .section_content .action_button .action_button_child {
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #dynamic_container #formacion_para_inv .action_button .action_button_child .action_button_child_face {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #formacion_para_inv .section_content .action_button .action_button_child div.external_nodes {
+        margin-top: 50px;
+    }
+    #formacion_para_inv .section_content .action_button .action_button_child div.external_nodes:before {
+        transform: rotate(90deg);
+        top: -138px;
+        left: 121px;
+    }
+    #formacion_para_inv .section_content .action_button .action_button_child .action_button_child_content {
+        position: static;
+    }
+    #formacion_para_inv .section_content .action_button .action_button_child div.seedbed .action_button_child_content ul {
+        margin-left: 0;
+    }
+    #formacion_para_inv .section_content .action_button .action_button_child div.seedbed .action_button_child_content ul:before {
+        left: calc(50% - 8px);
+    }
+    #formacion_para_inv .section_content .action_button .action_button_child div.seedbed .action_button_child_content ul li {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #formacion_para_inv .section_content .teachers.action_button .action_button_child {
+        margin-left: auto;
+    }
+    .teachers .action_button_child:before {
+        right: calc(50% - 21px);
+        left: inherit;
+    }
+    @media (orientation: portrait){
+        #formacion_para_inv .section_content .action_button_child div.title {
+            font-size: 12.2vw;
+        }
+        #formacion_para_inv .section_content .action_button .action_button_child div.seedbed .action_button_child_content ul li {
+            width: 92%;
+            padding: 4px;
+            border-radius: 5px;
+        }
+        #formacion_para_inv .section_content .action_button .action_button_child div.seedbed .action_button_child_content ul li:before{
+            display: none;
+        }
+    }
+    @media (orientation: landscape){
+        #formacion_para_inv .section_content .action_button .action_button_child div.external_nodes:before {
+            margin-left: 27%;
+        }
+        #initial_div .section_content .node {
+            font-size: 1.6em;
+            margin-top: -3%;
+        }
+    }
+}
+
+/* esto es temporal porque no he definido con Santiago cómo va a ir */
+/* .header nav ul li {
+    display: inline-block;
+    padding: 13px 15px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+}
+.header nav ul li:hover {
+    background-color: #FFF;
+    color: #BA2027;
+    cursor: pointer;
+} */
+
+
+
+/************************************************************************************/
+/************************ Investigacion científica **********************************/
+/************************************************************************************/
+#inv_cientifica .action_button_face {
+    background-image: url([[pix:theme|frontpage_img/investigacion_cientifica]]);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 302px;
+    width: 312px;
+    margin: auto;
+}
+#inv_cientifica .action_button:nth-child(1) .action_button_face {
+    background-position: 0 0;
+}
+#inv_cientifica .action_button:nth-child(2) .action_button_face {
+    background-position: -400px 0;
+}
+#inv_cientifica .action_button:nth-child(3) .action_button_face {
+    background-position: -800px 0;
+}
+#inv_cientifica .action_button:nth-child(4) .action_button_face {
+    background-position: -1200px 0;
+}
+#inv_cientifica .action_button:nth-child(5) .action_button_face {
+    background-position: -1600px 0;
+}
+#inv_cientifica .action_button:nth-child(6) .action_button_face {
+    background-position: -2000px 0;
+}
+#inv_cientifica .action_button:nth-child(7) .action_button_face {
+    background-position: -2400px 0;
+}
+#inv_cientifica .action_button:nth-child(8) .action_button_face {
+    background-position: -2800px 0;
+}
+#inv_cientifica .action_button:nth-child(9) .action_button_face {
+    background-position: -3200px 0;
+}
+#inv_cientifica .action_button:nth-child(1) .action_button_face:hover {
+    background-position: 0 -400px;
+}
+#inv_cientifica .action_button:nth-child(2) .action_button_face:hover {
+    background-position: -400px -400px;
+}
+#inv_cientifica .action_button:nth-child(3) .action_button_face:hover {
+    background-position: -800px -400px;
+}
+#inv_cientifica .action_button:nth-child(4) .action_button_face:hover {
+    background-position: -1200px -400px;
+}
+#inv_cientifica .action_button:nth-child(5) .action_button_face:hover {
+    background-position: -1600px -400px;
+}
+#inv_cientifica .action_button:nth-child(6) .action_button_face:hover {
+    background-position: -2000px -400px;
+}
+#inv_cientifica .action_button:nth-child(7) .action_button_face:hover {
+    background-position: -2400px -400px;
+}
+#inv_cientifica .action_button:nth-child(8) .action_button_face:hover {
+    background-position: -2800px -400px;
+}
+#inv_cientifica .action_button:nth-child(9) .action_button_face:hover {
+    background-position: -3200px -399px;
+}
+#inv_cientifica .section_content .action_button_face div.title {
+    font-size: 29px;
+    font-weight: bold;
+    color: #00A6A8;
+    top: 58.5%;
+    left: 11.1%;
+    letter-spacing: -0.07em;
+    width: 76.6%;
+    line-height: 0.9em;
+    margin-top: 0px;
+}
+#inv_cientifica #afiliationModal .form-group {
+    margin: 20px 10px;
+}
+#inv_cientifica #afiliationModal .form-group.controls {
+    text-align: center;
+}
+#inv_cientifica #afiliationModal .form-group.controls button {
+    background-color: #BA2056;
+    color: #FFF;
+    border-radius: 30px;
+    background-image: none;
+    border: none;
+    text-shadow: none;
+    padding: 6px 14px;
+    box-shadow: none;
+    outline: 0;
+}
+#inv_cientifica #afiliationModal .form-group.controls button:hover {
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+    background-color: #8a2649;
+    color: #FFF;
+}
+/************************************************************************************/
+/********************** Gestion de la Investigacion *********************************/
+/************************************************************************************/
+#gestion_de_inv .action_button_face {
+    background-image: url([[pix:theme|frontpage_img/gestion_investigacion]]);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 302px;
+    width: 312px;
+    margin: auto;
+}
+#gestion_de_inv .action_button:nth-child(1) .action_button_face {
+    background-position: 0 0;
+}
+#gestion_de_inv .action_button:nth-child(2) .action_button_face {
+    background-position: -400px 0;
+}
+#gestion_de_inv .action_button:nth-child(3) .action_button_face {
+    background-position: -800px 0;
+}
+#gestion_de_inv .action_button:nth-child(4) .action_button_face {
+    background-position: -1200px 0;
+}
+#gestion_de_inv .action_button:nth-child(5) .action_button_face {
+    background-position: -1600px 0;
+}
+#gestion_de_inv .action_button:nth-child(6) .action_button_face {
+    background-position: -2000px 0;
+}
+#gestion_de_inv .action_button:nth-child(1) .action_button_face:hover {
+    background-position: 0 -400px;
+}
+#gestion_de_inv .action_button:nth-child(2) .action_button_face:hover {
+    background-position: -400px -400px;
+}
+#gestion_de_inv .action_button:nth-child(3) .action_button_face:hover {
+    background-position: -800px -400px;
+}
+#gestion_de_inv .action_button:nth-child(4) .action_button_face:hover {
+    background-position: -1200px -400px;
+}
+#gestion_de_inv .action_button:nth-child(5) .action_button_face:hover {
+    background-position: -1600px -400px;
+}
+#gestion_de_inv .action_button:nth-child(6) .action_button_face:hover {
+    background-position: -2000px -400px;
+}
+#gestion_de_inv .section_content .action_button_face div.title {
+    font-size: 29px;
+    font-weight: bold;
+    color: #742B6D;
+    top: 58.5%;
+    left: 11.1%;
+    letter-spacing: -0.07em;
+    width: 76.6%;
+    line-height: 0.9em;
+    margin-top: 0px;
+}
+/************************************************************************************/
+/********************** Innovacion y transferencia *********************************/
+/************************************************************************************/
+#innovacion_y_trans .action_button_face {
+    background-image: url([[pix:theme|frontpage_img/innovacion_transferencia]]);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 299px;
+    width: 308px;
+    margin: auto;
+}
+#innovacion_y_trans .action_button:nth-child(1) .action_button_face {
+    background-position: -1px -4px;
+}
+#innovacion_y_trans .action_button:nth-child(2) .action_button_face {
+    background-position: -399px -4px;
+}
+#innovacion_y_trans .action_button:nth-child(3) .action_button_face {
+    background-position: -799px -4px;
+}
+#innovacion_y_trans .action_button:nth-child(4) .action_button_face {
+    background-position: -1201px -4px;
+}
+#innovacion_y_trans .action_button:nth-child(5) .action_button_face {
+    background-position: -1602px -4px;
+}
+#innovacion_y_trans .action_button:nth-child(1) .action_button_face:hover {
+    background-position: -1px -404px;
+}
+#innovacion_y_trans .action_button:nth-child(2) .action_button_face:hover {
+    background-position: -399px -404px;
+}
+#innovacion_y_trans .action_button:nth-child(3) .action_button_face:hover {
+    background-position: -799px -404px;
+}
+#innovacion_y_trans .action_button:nth-child(4) .action_button_face:hover {
+    background-position: -1201px -404px;
+}
+#innovacion_y_trans .action_button:nth-child(5) .action_button_face:hover {
+    background-position: -1602px -404px;
+}
+#innovacion_y_trans .section_content .action_button_face div.title {
+    font-size: 29px;
+    font-weight: bold;
+    color: #861518;
+    top: 61%;
+    left: 11.1%;
+    letter-spacing: -0.07em;
+    width: 76.6%;
+    line-height: 0.9em;
+    margin-top: 0px;
+}
+#innovacion_y_trans .action_button:nth-child(1) .action_button_face div.title {
+    font-size: 24px;
+    top: 57.5%;
+}
+#innovacion_y_trans .action_button_face div.more {
+    color: #EF4136;
+}
+
+/************************************************************************************/
+/***************************** Compartidos por: *************************************/
+/********************** Gestion de la Investigacion *********************************/
+/************************ Investigacion científica **********************************/
+/********************** Innovacion y transferencia *********************************/
+/************************************************************************************/
+#inv_cientifica .section_content .action_button_face.smalltitle div.title, #gestion_de_inv .section_content .action_button_face.smalltitle div.title, #innovacion_y_trans .section_content .action_button_face.smalltitle div.title {
+    top: 63%;
+}
+#inv_cientifica .section_content .action_button_face div.more, #gestion_de_inv .section_content .action_button_face div.more, #innovacion_y_trans .section_content .action_button_face div.more {
+    font-size: 22px;
+    top: 82.7%;
+}
+#inv_cientifica .section_content .action_button_face a, #gestion_de_inv .section_content .action_button_face a, #innovacion_y_trans .section_content .action_button_face a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+@media (min-width: 979px){
+    #inv_cientifica .action_button:nth-child(3n+1), #gestion_de_inv .action_button:nth-child(3n+1), #innovacion_y_trans .action_button:nth-child(3n+1){
+         margin-left: 0;
+    }
+}
+
+@media (max-width: 979px) and (min-width: 768px){
+    #inv_cientifica .action_button:nth-child(1), #gestion_de_inv .action_button:nth-child(1), #innovacion_y_trans .action_button:nth-child(1){
+        margin-left: 2.76243094%;
+    }
+}
+
+
+/***************************************************************************/
+/***************************************************************************/
+/***************************************************************************/
+
+.navbar-inner {
+    background-color: #BA2027;
+    background-image: none;
+    border-radius: 0;
+    border-width: 0;
+}
+.navbar .nav>li>a {
+    color: #FFF;
+    text-decoration: none;
+    text-shadow: none;
+}
+.navbar .nav>li>a:focus, .navbar .nav>li>a:hover, .navbar .nav>li>a:focus, .navbar .nav>li>a:hover{
+    color: #FFF;
+    text-decoration: underline;
+}
+.usermenu .moodle-actionmenu .toggle-display, .navbar .brand, .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu .caret:hover, .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu .caret:active, .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu .caret:hover, .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu .caret:active,.navbar .nav li.dropdown>a:hover .caret, .navbar .nav li.dropdown>a:focus .caret, .usermenu .moodle-actionmenu .toggle-display:hover {
+    color: #FFF;
+}
+.navbar .nav li.dropdown>.dropdown-toggle .caret {
+    border-top-color: #FFF;
+    border-bottom-color: #FFF;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+/***************************************************************************/
+/***************************************************************************/
+/***************************************************************************/
+#page-footer {
+    background: #e6e7e8 url([[pix:theme|theme_custom/textura_footer]]) repeat top left;
+    margin: 0;
+    border-top: 0;
+    border-bottom: 35px solid #00A6B2;
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+#page-footer .footnote {
+    background: transparent url([[pix:theme|theme_custom/footer]]) no-repeat center bottom;
+    min-height: 228px;
+}
+#page-footer .footnote p {
+    font-size: 16px;
+    letter-spacing: -0.015em;
+    color: #636363;
+}
+#page-footer .footnote p strong {
+    font-size: 18px;
+}
+#page-footer:before, #page-footer:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 35px rgba(0,0,0,0.5);
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    border-radius: 41%;
+}
+#page-footer:after {
+    right: 10%;
+    left: auto;
+    transform: skew(8deg) rotate(3deg);
+}

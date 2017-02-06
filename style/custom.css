@@ -1,0 +1,22 @@
+/* Custom CSS
+-------------------------*/
+div.logo {
+    background: url([[setting:logo]]) no-repeat center center, linear-gradient(to right, #FFFFFF 0%,#FFFFFF 50%,#E6E7E8 50%,#E6E7E8 100%);
+    display: block;
+    float: none;
+    height: 117px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    padding-top: 0;
+}
+
+
+/* Custom CSS Settings
+-------------------------*/
+[[setting:customcss]]
+
+
