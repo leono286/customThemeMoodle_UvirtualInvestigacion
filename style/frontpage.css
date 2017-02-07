@@ -1,4 +1,8 @@
-
+/************************************************************
+ * **********************************************************
+/* *************CSS styles for frontpage view **************/
+/************************************************************
+ * *********************************************************/
 #dynamic_container {
     width: 100%;
     max-width: 1200px;
@@ -35,7 +39,7 @@ nav {
     display: none;
 }
 /****************************************************/
-/****************************************************/
+/*********** Initial div styles *********************/
 /****************************************************/
 #initial_div {
     display: none;
@@ -109,11 +113,6 @@ nav {
     background-position: -1000px -200px;
     background-position: 97.1% 29%;
 }
-
-#initial_div .section_content #main_diagram > img {
-    width: 100%;
-    display: none;  /**************************************************************************************************************/
-}
 #initial_div .section_content .node {
     position: absolute;
     font-size: 2.0em;
@@ -179,35 +178,28 @@ nav {
     width: 312px;
     max-width: 312px;
 }
-/*#formacion_para_inv .section_content {*/
 .section_content {
     background: url([[pix:theme|frontpage_img/fondo_formacion_para_la_informacion]]) top center no-repeat transparent;
     width: 100%;
     padding-top: 30px;
 }
-/*#formacion_para_inv .section_content {*/
 .section_content {
     text-align: center;
 }
-/*#formacion_para_inv .section_content .action_button{*/
-    .section_content .action_button{
+.section_content .action_button{
     position: relative;
     min-width: 312px;
 }
-/*#formacion_para_inv .section_content .action_button_face{*/
-    .section_content .action_button_face{
+.section_content .action_button_face{
     position: relative;
 }
-/*#formacion_para_inv .section_content .action_button_face:hover{*/
-    .section_content .action_button_face:hover{
+.section_content .action_button_face:hover{
     cursor: pointer;
 }
-/*#formacion_para_inv .section_content .action_button_face > div{*/
-    .section_content .action_button_face > div{
+.section_content .action_button_face > div{
     position: absolute;
 }
-/*#formacion_para_inv .section_content .action_button_face div.title {*/
-    .section_content .action_button_face div.title {
+.section_content .action_button_face div.title {
     font-size: 52px;
     font-weight: bold;
     color: #547EC0;
@@ -216,8 +208,7 @@ nav {
     letter-spacing: -0.07em;
     width: 76.6%;
 }
-/*#formacion_para_inv .section_content .action_button_face div.more {*/
-    .section_content .action_button_face div.more {
+.section_content .action_button_face div.more {
     font-size: 24px;
     font-weight: normal;
     color: #808285;
@@ -303,7 +294,7 @@ nav {
 #formacion_para_inv .section_content .action_button .action_button_child div.external_nodes:before {
     content: " ";
     position: absolute;
-background: url([[pix:theme|frontpage_img/sombra_divisoria]]) top left no-repeat transparent;
+    background: url([[pix:theme|frontpage_img/sombra_divisoria]]) top left no-repeat transparent;
     width: 20px;
     left: -54px;
     top: 0;
@@ -386,7 +377,6 @@ background: url([[pix:theme|frontpage_img/etiqueta_ciclo_formacion_basica]]) 3px
 #formacion_para_inv .section_content .action_button .action_button_child div.seedbed .action_button_child_content ul li:nth-child(4):before {
     background-image: url([[pix:theme|frontpage_img/etiqueta_ciclo_emprendimiento_innovacion]]);
 }
-
 @media (min-width: 960px) and (max-width: 1199px){
     #formacion_para_inv .section_content .action_button .action_button_child{
         margin-left: 0;
@@ -398,7 +388,6 @@ background: url([[pix:theme|frontpage_img/etiqueta_ciclo_formacion_basica]]) 3px
         margin-top: -1.5%;
     }
 }
-
 @media (min-width: 768px) and (max-width: 959px){
     #formacion_para_inv .row-fluid .offset2:first-child {
         margin-left: 7%;
@@ -413,7 +402,6 @@ background: url([[pix:theme|frontpage_img/etiqueta_ciclo_formacion_basica]]) 3px
         margin-top: -1.6%;
     }
 }
-
 @media (max-width: 767px) {
     #initial_div .section_content {
         background: url([[pix:theme|frontpage_img/fondo_home_sin_avata]]) center center no-repeat;
@@ -500,23 +488,6 @@ background: url([[pix:theme|frontpage_img/etiqueta_ciclo_formacion_basica]]) 3px
         }
     }
 }
-
-/* esto es temporal porque no he definido con Santiago cómo va a ir */
-/* .header nav ul li {
-    display: inline-block;
-    padding: 13px 15px 12px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #FFF;
-}
-.header nav ul li:hover {
-    background-color: #FFF;
-    color: #BA2027;
-    cursor: pointer;
-} */
-
-
-
 /************************************************************************************/
 /************************ Investigacion científica **********************************/
 /************************************************************************************/
@@ -618,7 +589,7 @@ background: url([[pix:theme|frontpage_img/etiqueta_ciclo_formacion_basica]]) 3px
     color: #FFF;
 }
 /************************************************************************************/
-/********************** Gestion de la Investigacion *********************************/
+/********************** Gestión de la Investigación *********************************/
 /************************************************************************************/
 #gestion_de_inv .action_button_face {
     background-image: url([[pix:theme|frontpage_img/gestion_investigacion]]);
@@ -676,7 +647,7 @@ background: url([[pix:theme|frontpage_img/etiqueta_ciclo_formacion_basica]]) 3px
     margin-top: 0px;
 }
 /************************************************************************************/
-/********************** Innovacion y transferencia *********************************/
+/********************** Innovación y transferencia *********************************/
 /************************************************************************************/
 #innovacion_y_trans .action_button_face {
     background-image: url([[pix:theme|frontpage_img/innovacion_transferencia]]);
@@ -737,9 +708,9 @@ background: url([[pix:theme|frontpage_img/etiqueta_ciclo_formacion_basica]]) 3px
 
 /************************************************************************************/
 /***************************** Compartidos por: *************************************/
-/********************** Gestion de la Investigacion *********************************/
-/************************ Investigacion científica **********************************/
-/********************** Innovacion y transferencia *********************************/
+/********************** Gestión de la Investigación *********************************/
+/************************ Investigación científica **********************************/
+/********************** Innovación y transferencia *********************************/
 /************************************************************************************/
 #inv_cientifica .section_content .action_button_face.smalltitle div.title, #gestion_de_inv .section_content .action_button_face.smalltitle div.title, #innovacion_y_trans .section_content .action_button_face.smalltitle div.title {
     top: 63%;
@@ -761,14 +732,11 @@ background: url([[pix:theme|frontpage_img/etiqueta_ciclo_formacion_basica]]) 3px
          margin-left: 0;
     }
 }
-
 @media (max-width: 979px) and (min-width: 768px){
     #inv_cientifica .action_button:nth-child(1), #gestion_de_inv .action_button:nth-child(1), #innovacion_y_trans .action_button:nth-child(1){
         margin-left: 2.76243094%;
     }
 }
-
-
 /***************************************************************************/
 /***************************************************************************/
 /***************************************************************************/

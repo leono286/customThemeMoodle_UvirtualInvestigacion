@@ -1,32 +1,10 @@
 <?php
-// This file is part of Moodle - http://moodle.org/
-//
-// Moodle is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// Moodle is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
 /**
- * This layout file is designed maintenance related tasks such as upgrade and installation of plugins.
- *
- * It's ultra important that this layout file makes no use of API's unless it absolutely needs to.
- * Under no circumstances should it use API calls that result in database or cache interaction.
- *
- * If you are modifying this file please be extremely careful, one wrong API call and you could end up
- * breaking installation or upgrade unwittingly.
- *
- * @package   theme_bootstrapbase
- * @copyright 2012 Bas Brands, www.basbrands.nl
+ * @package   theme_uvirtualinvestigacion
+ * @copyright 2017 leono286 - dhabernal
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
 $html = theme_uvirtualinvestigacion_get_html_for_settings($OUTPUT, $PAGE);
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>

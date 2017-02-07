@@ -1,30 +1,7 @@
 <?php
-// This file is part of Moodle - http://moodle.org/
-//
-// Moodle is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// Moodle is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
 /**
- * Moodle's Clean theme, an example of how to make a Bootstrap theme
- *
- * DO NOT MODIFY THIS THEME!
- * COPY IT FIRST, THEN RENAME THE COPY AND MODIFY IT INSTEAD.
- *
- * For full information about creating Moodle themes, see:
- * http://docs.moodle.org/dev/Themes_2.0
- *
- * @package   theme_clean
- * @copyright 2013 Moodle, moodle.org
+ * @package   theme_uvirtualinvestigacion
+ * @copyright 2017 leono286 - dhabernal
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -120,9 +97,6 @@ function theme_uvirtualinvestigacion_set_customcss($css, $customcss) {
 /**
  * Returns an object containing HTML for the areas affected by settings.
  *
- * Do not add Clean specific logic in here, child themes should be able to
- * rely on that function just by declaring settings with similar names.
- *
  * @param renderer_base $output Pass in $OUTPUT.
  * @param moodle_page $page Pass in $PAGE.
  * @return stdClass An object with the following properties:
@@ -204,7 +178,7 @@ function theme_uvirtualinvestigacion_get_html_for_settings(renderer_base $output
 }
 
 /**
- * All theme functions should start with theme_clean_
+ * 
  * @deprecated since 2.5.1
  */
 function uvirtualinvestigacion_process_css() {
@@ -212,7 +186,7 @@ function uvirtualinvestigacion_process_css() {
 }
 
 /**
- * All theme functions should start with theme_clean_
+ * 
  * @deprecated since 2.5.1
  */
 function uvirtualinvestigacion_set_logo() {
@@ -220,7 +194,7 @@ function uvirtualinvestigacion_set_logo() {
 }
 
 /**
- * All theme functions should start with theme_clean_
+ * 
  * @deprecated since 2.5.1
  */
 function uvirtualinvestigacion_set_customcss() {

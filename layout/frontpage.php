@@ -1,24 +1,7 @@
 <?php
-// This file is part of Moodle - http://moodle.org/
-//
-// Moodle is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// Moodle is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
 /**
- * The one column layout.
- *
  * @package   theme_uvirtualinvestigacion
- * @copyright 2013 Moodle, moodle.org
+ * @copyright 2017 leono286 - dhabernal
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -74,26 +57,24 @@ echo $OUTPUT->doctype(); ?>
                     </div>
                     <div class="section_content">
                         <div id="main_diagram">
-                            <img src="<?php echo $OUTPUT->pix_url('frontpage_img/infografico_sin_texto', 'theme'); ?>">
                             <div class="nodebtn inv_cientifica"></div>
                             <div class="nodebtn formacion_para_inv"></div>
                             <div class="nodebtn innovacion_y_trans"></div>
                             <div class="nodebtn gestion_de_inv"></div>
                             <div class="node inv_cientifica">Investigación Científica</div>
                             <div class="node formacion_para_inv">Formación<span class="text_link">para la</span >Investigación</div>
-                                <div class="node innovacion_y_trans">Innovación<span class="text_link">y</span>Transferencia</div>
-                                <div class="node gestion_de_inv">Gestión<span class="text_link">de la</span >Investigación</div>
-                                </div>
-                                <a href="http://uvirtualinvestigacion.udem.edu.co/mod/forum/view.php?id=280"><img src="<?php echo $OUTPUT->pix_url('frontpage_img/enterate', 'theme'); ?>" alt="" id="news_forum"></a>
-                            </div>
+                            <div class="node innovacion_y_trans">Innovación<span class="text_link">y</span>Transferencia</div>
+                            <div class="node gestion_de_inv">Gestión<span class="text_link">de la</span >Investigación</div>
                         </div>
-                        <?php
-                        echo $html->html_cient_inv;
-                        echo $html->html_form_inv;
-                        echo $html->html_trans_innov;
-                        echo $html->html_inv_mang;
-                        ?>
-
+                        <a href="http://uvirtualinvestigacion.udem.edu.co/mod/forum/view.php?id=280"><img src="<?php echo $OUTPUT->pix_url('frontpage_img/enterate', 'theme'); ?>" alt="" id="news_forum"></a>
+                    </div>
+                </div>
+                <?php
+                echo $html->html_cient_inv;
+                echo $html->html_form_inv;
+                echo $html->html_trans_innov;
+                echo $html->html_inv_mang;
+                ?>
             </div>
         </section>
     </div>

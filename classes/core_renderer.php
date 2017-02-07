@@ -1,25 +1,8 @@
 <?php
-// This file is part of Moodle - http://moodle.org/
-//
-// Moodle is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// Moodle is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
 /**
- * Renderers to align Moodle's HTML with that expected by Bootstrap
- *
- * @package    theme_bootstrapbase
- * @copyright  2012 Bas Brands, www.basbrands.nl
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package   theme_uvirtualinvestigacion
+ * @copyright 2017 leono286 - dhabernal
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 
@@ -54,6 +37,7 @@ class theme_uvirtualinvestigacion_core_renderer extends theme_bootstrapbase_core
     /*
      * This renders the navbar.
      * Uses bootstrap compatible html.
+     * Borrowed from theme bootstrapbase.
      */
     public function navbar() {
         $items = $this->page->navbar->get_items();
@@ -89,7 +73,7 @@ class theme_uvirtualinvestigacion_core_renderer extends theme_bootstrapbase_core
     }
 
     /*
-     * This renders the bootstrap top menu.
+     * This renders the theme top menu.
      *
      * This renderer is needed to enable the Bootstrap style navigation.
      */
@@ -105,7 +89,7 @@ class theme_uvirtualinvestigacion_core_renderer extends theme_bootstrapbase_core
 
     /*
      * This code renders the custom menu items for the
-     * bootstrap dropdown menu.
+     * dropdown menu.
      */
     protected function render_custom_menu_item(custom_menu_item $menunode, $level = 0 ) {
         static $submenucount = 0;
@@ -160,7 +144,12 @@ class theme_uvirtualinvestigacion_core_renderer extends theme_bootstrapbase_core
         }
         return $content;
     }
-
+    
+    /*
+     * This renders the list of enroled courses when user is logged in.
+     * Uses bootstrap compatible html.
+     * Borrowed from theme essential.
+     */
     public function custom_menu_courses() {
         global $CFG;
         $coursemenu = new custom_menu();
@@ -263,10 +252,9 @@ class theme_uvirtualinvestigacion_core_renderer extends theme_bootstrapbase_core
 
     /**
      * This code renders the navbar button to control the display of the custom menu
-     * on smaller screens.
-     *
-     * Do not display the button if the menu is empty.
-     *
+     * on smaller screens.     *
+     * Do not display the button if the menu is empty.     *
+     * * Borrowed from theme essential.
      * @return string HTML fragment
      */
     protected function navbar_button() {
@@ -287,8 +275,8 @@ class theme_uvirtualinvestigacion_core_renderer extends theme_bootstrapbase_core
 
     /**
      * Renders tabtree
-     *
-     * @param tabtree $tabtree
+     * * Borrowed from theme essential.
+     ** @param tabtree $tabtree
      * @return string
      */
     protected function render_tabtree(tabtree $tabtree) {
@@ -307,11 +295,10 @@ class theme_uvirtualinvestigacion_core_renderer extends theme_bootstrapbase_core
 
     /**
      * Renders tabobject (part of tabtree)
-     *
-     * This function is called from {@link core_renderer::render_tabtree()}
+     * * Borrowed from theme essential.
+     ** This function is called from {@link core_renderer::render_tabtree()}
      * and also it calls itself when printing the $tabobject subtree recursively.
-     *
-     * @param tabobject $tabobject
+     ** @param tabobject $tabobject
      * @return string HTML fragment
      */
     protected function render_tabobject(tabobject $tab) {
@@ -332,10 +319,9 @@ class theme_uvirtualinvestigacion_core_renderer extends theme_bootstrapbase_core
     }
 
 
-
     /**
      * Produces a header for a block.
-     *
+     ** Borrowed from theme essential.
      * @param block_contents $bc.
      * @return string.
      */
@@ -413,7 +399,12 @@ class theme_uvirtualinvestigacion_core_renderer extends theme_bootstrapbase_core
         }
         return $output;
     }
-
+    
+    
+    /**
+     * Renders the theme's custom breadcrumb.
+     * @return string.
+     */
     public function custom_breadcrumb() {
         $html = html_writer::start_div('clearfix container-fluid', array('id' => 'page-navbar'));
         $html .= html_writer::tag('div', $this->navbar(), array('class' => 'breadcrumb-nav'));
@@ -422,14 +413,21 @@ class theme_uvirtualinvestigacion_core_renderer extends theme_bootstrapbase_core
         return $html;
     }
 
+    
+    /**
+     * Renders the theme's content header.
+     * @return string.
+     */
     public function full_header() {
         $html = html_writer::start_tag('header', array('id' => 'page-header', 'class' => 'clearfix'));
-        // $html .= $this->context_header();
         $html .= html_writer::tag('div', $this->course_header(), array('id' => 'course-header'));
         $html .= html_writer::end_tag('header');
         return $html;
     }
-
+    /**
+     * Renders the content context header.
+     * @return string.
+     */
     public function course_content_header($onlyifnotcalledbefore = false) {
         global $CFG;
         $html = $this->context_header();
@@ -452,9 +450,11 @@ class theme_uvirtualinvestigacion_core_renderer extends theme_bootstrapbase_core
         return $html;
     }
 
+    
     /**
      * Internal implementation of user image rendering.
-     *
+     * * Renders a bigger image for user in forum posts.
+     ** Borrowed from theme essential.
      * @param user_picture $userpicture
      * @return string
      */
@@ -466,8 +466,4 @@ class theme_uvirtualinvestigacion_core_renderer extends theme_bootstrapbase_core
         }
         return parent::render_user_picture($userpicture);
     }
-
-
-
-
 }

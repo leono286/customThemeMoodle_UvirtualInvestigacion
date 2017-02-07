@@ -9,12 +9,9 @@ div.logo {
     padding: 0;
     width: 100%;
 }
-
 body {
     padding-top: 0;
 }
-
-
 /* Custom CSS Settings
 -------------------------*/
 [[setting:customcss]]

@@ -19,6 +19,12 @@ require(['jquery'], function($) {
         };
         var currenthash = actions.validateHash(window.location.hash);
 
+        $('.nav-collapse.collapse .nav li a[href*="redirect=0"]').click( function(event) {
+            event.preventDefault();
+            var linkhash = $(this).attr('href').split('#')[1];
+            window.location.hash = linkhash ? linkhash : '';
+        });
+        
         //Show the requested view
         var requestedview = views[currenthash];
         $( requestedview ).css('display','block');
@@ -105,7 +111,7 @@ require(['jquery'], function($) {
             $(this).find($('.outcome')).html('');
             $(this).find($('form'))[0].reset();
             $(this).find($('form button')).prop('disabled', true);
-        })
+        });
 
         window.onhashchange = function() {
             prevhash = currenthash;
@@ -113,18 +119,22 @@ require(['jquery'], function($) {
             actions.changeView(prevhash, currenthash);
         };
 
-        // script Temporal para volver a initial_div desde formacion_para_inv (no definido este comportamiento)
-        $('#home_link').click(function(){
-            $( '#formacion_para_inv' ).fadeOut('fast',function(){
-                $( '#initial_div' ).fadeIn('fast');
-                actions.scrollView('#initial_div', 45);
-                $( '.action_button_child' ).hide();
-                $( '.action_button_child_content' ).hide();
+        // This script was provisional and hasn't been deleted because it still could be useful
+        // $('#home_link').click(function(){
+            // $( '#formacion_para_inv' ).fadeOut('fast',function(){
+                // $( '#initial_div' ).fadeIn('fast');
+                // actions.scrollView('#initial_div', 45);
+                // $( '.action_button_child' ).hide();
+                // $( '.action_button_child_content' ).hide();
 
-            });
-        });
-
+            // });
+        // });
+        
+        
         // ********* changeView ***********
+        // This function is called when a new view in frontpage is requested.
+        // It's in charge of loading the requested view
+        
         actions.changeView = function(view2hide, view2show){
             actions.scrollView('nav', 0);
             $( views[view2hide] ).fadeOut('slow',function(){
@@ -132,6 +142,7 @@ require(['jquery'], function($) {
             });
         };
 
+        
         // ********* toggleChild ***********
         // This function toggles the child content of a button when pressed, call closeSiblings function
         // to close the child content of siblings and call scrollView function to scroll to the
@@ -140,6 +151,7 @@ require(['jquery'], function($) {
         // cls_to_toggle - The class of the child to toggle
         // step - Will be passed to scrollView function
         // sub_children - Will be passed to closeSiblings function
+        
         actions.toggleChild = function (parent, cls_to_toggle, step, sub_children){
             sub_children = false || sub_children;
             actions.closeSiblings( parent , cls_to_toggle , sub_children);
@@ -185,13 +197,5 @@ require(['jquery'], function($) {
         actions.scrollView = function (parent, step){
             $("html, body").animate({ scrollTop: $(parent).offset().top - step }, 600);
         };
-
-
-        // ********* showAfiliationModal ***********
-        // Show modal where afiliations are generated
-        actions.showAfiliationModal = function(){
-
-        };
-
     });
 });
